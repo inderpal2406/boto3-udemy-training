@@ -1,5 +1,6 @@
 # This script will start a stopped EC2 instance.
 # But will wait until the instance comes to running state. And then display the result.
+# The logic to implement the wait of transition between the states is manual here.
 
 # Import modules.
 
@@ -37,4 +38,4 @@ while instance_state != "running":
             instance_state = each_instance["State"]["Name"]
             #print(instance_state)
     time.sleep(5)   # Introduce a delay to avoid frequent checks.
-print("\nInstance started successfully.")
+print("\nInstance is now up and running.")

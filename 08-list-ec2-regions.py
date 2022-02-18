@@ -10,7 +10,7 @@ aws_session = boto3.session.Session(profile_name="inderpalaws02-ec2-admin")
 
 # Initiate the EC2 client.
 
-ec2_client = aws_session.client(service_name="ec2",region_name="us-east-1")
+ec2_client = aws_session.client(service_name="ec2",region_name="us-east-1") # Though the region_name is us-east-1 here, but it returns all available regions.
 
 # Get the region names which are enabled for our account.
 

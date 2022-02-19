@@ -1,0 +1,2 @@
+# Ignore CSV files generated as output of python scripts.
+*.csv
